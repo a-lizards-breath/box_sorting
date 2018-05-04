@@ -3,9 +3,11 @@ import Column from './column'
 
 class Page extends React.Component {
   render() {
-    let left   = [{color: "red"}, {color: "blue"}] 
-    let center = [{color: "blue"}, {color: "blue"}] 
-    let right  = [{color: "red"}] 
+    let redBox  = {color: "red"}
+    let blueBox = {color: "blue"}
+    let left    = [redBox, redBox, blueBox, blueBox] 
+    let center  = [blueBox] 
+    let right   = [redBox, blueBox, redBox, redBox, redBox, blueBox] 
     return (
       <div className="page">
         <Column className="column-left" boxes={left}/>
